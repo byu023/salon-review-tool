@@ -47,7 +47,7 @@ def generate_reply(review):
             model="claude-opus-4-5",
             max_tokens=1024,
             messages=[
-                {"role": "user", "content": f"美容サロンのオーナーとして以下の口コミに丁寧な返信を100文字以内で書いてください：\n{review}"}
+                {"role": "user", "content": f"あなたは美容サロンのオーナーです。以下のお客様の口コミに対して、自然で温かみのある返信を80文字以内で書いてください。敬語を使い、口コミの内容に具体的に触れてください：\n{review}"}
             ]
         )
         return message.content[0].text
