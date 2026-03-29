@@ -3,3 +3,4 @@
 news_log.csv
 reviews_log.csv
 page.html
+__pycache__/
